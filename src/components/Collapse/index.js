@@ -45,7 +45,7 @@ export default class Collapse extends Component<Props> {
         React.Children.forEach(this.props.children,(child)=>{
             if(child.type === CollapseHeader){
                 header = (
-                    <TouchableOpacity onPress={()=>this.__toggle()} onLongPress={handleLongPressCallback} activeOpacity={0.2}>
+                    <TouchableOpacity onPress={()=>this.__toggle()} onLongPress={handleLongPressCallback} activeOpacity={0.9}>
                         {child}
                     </TouchableOpacity>
                 );
